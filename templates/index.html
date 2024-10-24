@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Query System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Form Section -->
+        <div class="form-container">
+            <h1>Natural Language to SQL Query System</h1>
+            <form id="queryForm">
+                <label for="question">Ask your question:</label>
+                <input type="text" id="question" name="question" placeholder="Type your question..." required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+
+        <!-- SQL Output Section -->
+        <div class="sql-container">
+            <h2>Generated SQL Query</h2>
+            <div id="generatedSQL"></div>
+            <div id="imageContainer"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Reset margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f8fb;
+    color: #333;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    height: 100vh;
+    gap: 20px;
+}
+
+/* Left side: Form container */
+.form-container {
+    width: 45%;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0a74da;
+}
+
+.form-container label {
+    font-size: 18px;
+    color: #555;
+}
+
+.form-container input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input[type="text"]:focus {
+    border-color: #0a74da;
+    background-color: #fff;
+    outline: none;
+}
+
+.form-container button {
+    background-color: #0a74da;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #005bb5;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 50px;
+    border: 1px solid #ddd;
+}
+
+/* Right side: SQL query display container */
+.sql-container {
+    width: 50%;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.sql-container h2 {
+    font-size: 22px;
+    color: #0a74da;
+    margin-bottom: 15px;
+}
+
+#generatedSQL {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+#imageContainer img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container,
+    .sql-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container input[type="text"],
+    .form-container button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .sql-container h2 {
+        font-size: 18px;
+    }
+
+    #generatedSQL {
+        font-size: 14px;
+    }
+}

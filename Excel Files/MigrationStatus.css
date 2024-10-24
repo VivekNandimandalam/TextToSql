@@ -1,0 +1,62 @@
+/* MigrationStatus.css */
+
+.migration-status-container {
+    padding: 20px;
+    background-color: #f0f4f8; /* Light background color */
+    min-height: 100vh;
+  }
+  
+  .status-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff; /* White background for status */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for elevation */
+  }
+  
+  .status-content h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .status-section {
+    margin-bottom: 20px;
+  }
+  
+  .status-section h3 {
+    color: #5700ff; /* Highlight headings */
+    border-bottom: 2px solid #5700ff; /* Bottom border for headings */
+    padding-bottom: 5px;
+  }
+  
+  .status-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .status-section ul li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9; /* Slight background for each list item */
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Light border for list items */
+  }
+  
+  .status-section ul li span {
+    font-weight: bold;
+  }
+  
+  .status-section ul li span.started {
+    color: #4caf50; /* Green for started */
+  }
+  
+  .status-section ul li span.processing {
+    color: #ff9800; /* Orange for processing */
+  }
+  
+  .status-section ul li span.completed {
+    color: #2196f3; /* Blue for completed */
+  }
+  
